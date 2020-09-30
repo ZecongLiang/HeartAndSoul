@@ -1,4 +1,4 @@
-int tempLogic = 0;
+int tempLogicPin = 0;
 
 void setup()
 {
@@ -14,7 +14,7 @@ void loop()
 
 float getTemp()
 {
-  int tempRead = analogRead(tempLogic);
+  int tempRead = analogRead(tempLogicPin);
   float tempC = ((tempRead * 3.3 / 1024) - 0.5 ) * 100;
   float tempF = tempC * 1.8 + 32;
   
